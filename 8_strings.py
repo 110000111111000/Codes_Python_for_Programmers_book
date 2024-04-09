@@ -44,8 +44,11 @@ sentence = 'to be or not to be that is the question'
 #print(sentence.count('that',24, 25))
 #print(sentence.rindex('be'))
 #print('THAT' not in sentence)
-print(sentence.startswith('be'))
-
+#print(sentence.startswith('be'))
+#letters = 'A, B, C, D'
+#print(letters.split(', '))
+letters_list = ['A', 'B', 'C', 'D']
+print(','.join(letters_list))
 
 
 
