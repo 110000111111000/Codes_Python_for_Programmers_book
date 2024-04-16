@@ -47,9 +47,40 @@ sentence = 'to be or not to be that is the question'
 #print(sentence.startswith('be'))
 #letters = 'A, B, C, D'
 #print(letters.split(', '))
-letters_list = ['A', 'B', 'C', 'D']
-print(','.join(letters_list))
+#letters_list = ['A', 'B', 'C', 'D']
+#print(','.join(letters_list))
 
+#print('Amanda: 89, 97, 92'.partition(':'))
 
+#url = 'http://www.deitel.com/books/PyCDS/table_of_contents.html'
+#rest_of_url, seprator, document = url.rpartition('/')
+#print(rest_of_url)
+#print(seprator)
+#print(document)
 
+#lines = """This is line1\n
+#This is line2
+#This is line3"""
+#print(lines)
+#print(lines.splitlines(True))
 
+#print('27'.isdigit())
+
+#print('123 Main Street'.isalnum())
+
+#file_path = r'C:\MyFolder\MySubFolder\MyFile.txt'
+#print(file_path)
+
+import re
+pattern = '02215'
+if re.fullmatch(pattern, '02215'):
+#    print('Match')
+else:
+#    print('No match')
+
+#print('Match' if re.fullmatch(pattern, '51220') else 'No match')
+#print('Valid' if re.fullmatch(r'\d{5}', '02215') else 'Invalid')
+#print('Valid' if re.fullmatch('[A-Z][a-z]*', 'Wally') else 'Invalid')
+#print('Valid' if re.fullmatch('[A-Z][a-z]*', 'eva') else 'Invalid')
+print('Valid' if re.fullmatch('[^a-z]','A') else 'Invalid')
+print('Valid' if re.fullmatch('[^a-z]','a') else 'Invalid')
